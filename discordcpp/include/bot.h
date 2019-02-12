@@ -1,6 +1,6 @@
+#include <functional>
 #include <string>
 #include "discordcpp_Export.h"
-#include "EventListener.h"
 
 class Bot {
 public:
@@ -8,5 +8,8 @@ public:
 
 	discordcpp_EXPORT void login(const std::string &token);
 
-	discordcpp_EXPORT void addEventListener(const EventListener &eventListener);
+	discordcpp_EXPORT void onEvent(const std::function<std::string(std::string)> &callback);
+
+private:
+	std::string _token;
 };

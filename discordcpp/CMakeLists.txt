@@ -13,11 +13,13 @@ include_directories (include ${PROJECT_BINARY_DIR})
 file (GLOB SOURCES "src/*.cpp")
 
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/build)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/build)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
-#output library as demoShared.*
+message( ${CMAKE_CURRENT_SOURCE_DIR} )
+
+message("testsasssssssssssssssssss")
 
 #output library export file *.lib and
 #output macro definitions include file

@@ -7,3 +7,5 @@ project ("discordcpp")
 
 # Include sub-projects.
 add_subdirectory ("discordcpp")
+
+message("testsasssssssssssssssssss")
