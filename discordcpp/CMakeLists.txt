@@ -17,10 +17,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/build)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/build)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
-message( ${CMAKE_CURRENT_SOURCE_DIR} )
-
-message("testsasssssssssssssssssss")
-
 #output library export file *.lib and
 #output macro definitions include file
 include (GenerateExportHeader)

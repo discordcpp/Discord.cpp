@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+#visual studio subfolder
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+build/
+.vs/
+
